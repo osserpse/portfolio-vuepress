@@ -5,20 +5,20 @@ admin_path: "/admin"
 webhook_url: 
 sections:
 - type: document
-  path: portfolio/index.md
-  label: Homepage
+  path: start/index.md
+  label: Start
   templates:
   - settings
 - type: directory
-  path: portfolio/works
-  label: Works
+  path: explore
+  label: Utforska
   create: all
   match: "**/*"
   templates:
   - works
 - type: directory
-  path: portfolio/journal
-  label: Journal
+  path: about
+  label: Om Trainstation
   create: all
   match: "**/[!index]*"
   templates:
